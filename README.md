@@ -40,19 +40,23 @@ fitness_lakehouse/
 ```
 
 ## 🚀 Installation & Execution
+
 1. Prerequisites
 Ensure your local machine has Java JDK 17, Apache Hadoop binaries (winutils.exe), and Python 3.11+ configured inside your environment paths.
 
 2. Setup Virtual Environment
-Bash
+```Bash
 python -m venv venv
 source venv/Scripts/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
+```
 3. Run Automated Quality Assurance (Unit Tests)
 Validate code logic and schema enforcement assumptions before triggering processing jobs:
 
-Bash
+```Bash
 pytest
+```
 4. Execute the End-to-End Pipeline
-Bash
+```Bash
 python src/pipeline_runner.py
+```
