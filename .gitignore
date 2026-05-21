@@ -1,0 +1,22 @@
+# Isolate local data simulations (The Lakehouse simulation)
+storage/
+data/
+*.csv
+*.parquet
+
+# Isolate Spark/Hadoop runtime noise and temp checkpoints
+.ivy2/
+_delta_log/
+derby.log
+metastore_db/
+checkpoint/
+
+# Python execution and environment cleanups
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Automated testing metadata
+.pytest_cache/
+.coverage
